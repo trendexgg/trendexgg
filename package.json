@@ -8,8 +8,9 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "select-winner": "bun src/scripts/selectWinner.ts data/modric_top_holders_jan_14_2026.json 1",
-    "verify-winner": "bun src/scripts/verifyWinner.ts data/modric_top_holders_jan_14_2026.json 1"
+    "select-winner": "bun src/scripts/selectWinner.ts data/modric_top_holders_jan_14_2026.json 1 393400000",
+    "verify-winner": "bun src/scripts/verifyWinner.ts data/modric_top_holders_jan_14_2026.json 1",
+    "verify-draw2": "bun src/scripts/verifyWinner.ts data/modric_top_holders_nov_01.json 1 4SLs5v8A72kEKjwBJQoMGV3rY9xcirHQLmJ6rx6uHnez --offset 73 137"
   },
   "keywords": [
     "solana",
@@ -30,6 +31,7 @@
     "minimist": "^1.2.8"
   },
   "devDependencies": {
+    "@types/minimist": "^1.2.5",
     "@types/node": "^20.0.0",
     "typescript": "^5.0.0",
     "tsx": "^4.0.0"
